@@ -2,6 +2,31 @@
 set -e
 
 # Backup script for AGENT project
+
+# Check for help flag
+if [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
+    cat << 'EOF'
+Usage: backup.sh [OPTIONS]
+
+Create a backup of the AGENT project
+
+Options:
+  --help, -h    Show this help message
+
+Description:
+  This script creates a backup of the AGENT project including:
+  - Source code (agent/, rust/)
+  - Documentation (docs/)
+  - Scripts (scripts/)
+  - Configuration files
+  - Compiled libraries (if present)
+
+Examples:
+  ./scripts/backup.sh
+EOF
+    exit 0
+fi
+
 echo "💾 Creating AGENT project backup..."
 
 # Navigate to project root

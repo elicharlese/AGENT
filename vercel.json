@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.js"
-    }
+  "buildCommand": "npx nx build web",
+  "outputDirectory": "dist/apps/web",
+  "framework": "vite",
+  "env": {
+    "VITE_API_URL": "@VITE_API_URL"
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

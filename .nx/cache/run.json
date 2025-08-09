@@ -1,8 +1,8 @@
 {
   "run": {
-    "command": "nx serve web --port=4200 --host=localhost",
-    "startTime": "2025-08-06T21:11:42.973Z",
-    "endTime": "2025-08-06T23:03:34.058Z",
+    "command": "nx serve mobile",
+    "startTime": "2025-08-09T01:52:31.418Z",
+    "endTime": "2025-08-09T01:56:03.059Z",
     "inner": false
   },
   "tasks": []

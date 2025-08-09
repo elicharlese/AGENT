@@ -1,7 +1,7 @@
 import React from 'react';
 
 export type SideNavProps = {
-  items?: Array<{ label: string; href: string }>;
+  items?: Array<{ label: string; href: string; icon?: React.ReactNode; trailing?: React.ReactNode }>;
   footer?: React.ReactNode;
 };
 
@@ -14,7 +14,7 @@ const defaultItems: SideNavProps['items'] = [
 
 export const SideNav: React.FC<SideNavProps> = ({ items = defaultItems, footer }) => {
   return (
-    <nav className="h-[calc(100vh-3.5rem)] overflow-y-auto p-s bg-white">
+    <nav className="h-full overflow-y-auto p-s bg-white">
       <ul className="space-y-1">
         {items.map((it) => (
           <li key={it.href}>

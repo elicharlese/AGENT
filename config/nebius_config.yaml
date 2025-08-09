@@ -1,0 +1,114 @@
+# Nebius Prompt Presets API Configuration
+# Configuration for AGENT LLM system integration with Nebius AI Studio
+
+nebius:
+  # API Configuration
+  api_key: "${NEBIUS_API_KEY}"  # Set via environment variable
+  base_url: "https://api.studio.nebius.com"
+  public_backend_url: "https://api.studio.nebius.com/v1"
+  timeout_seconds: 30
+  max_retries: 3
+  
+  # Model Configuration
+  default_model: "deepseek-ai/DeepSeek-V3-0324-fast"
+  fallback_model: "meta-llama/Llama-3.3-70B-Instruct"
+  
+  # Integration Settings
+  use_nebius_presets: true
+  fallback_to_local: true
+  preset_cache_ttl: 3600  # 1 hour
+  auto_create_presets: true
+  
+  # Mode-Specific Model Preferences
+  mode_models:
+    design: "deepseek-ai/DeepSeek-V3-0324-fast"
+    security: "meta-llama/Llama-3.3-70B-Instruct"
+    development: "deepseek-ai/DeepSeek-V3-0324-fast"
+    analysis: "meta-llama/Llama-3.3-70B-Instruct"
+    communication: "deepseek-ai/DeepSeek-V3-0324-fast"
+    automation: "meta-llama/Llama-3.3-70B-Instruct"
+    research: "meta-llama/Llama-3.3-70B-Instruct"
+    reasoning: "meta-llama/Llama-3.3-70B-Instruct"
+    creative: "deepseek-ai/DeepSeek-V3-0324-fast"
+    educational: "deepseek-ai/DeepSeek-V3-0324-fast"
+    diagnostic: "meta-llama/Llama-3.3-70B-Instruct"
+    optimization: "meta-llama/Llama-3.3-70B-Instruct"
+
+# Local Backend Configuration
+local_backend:
+  python:
+    enabled: true
+    host: "localhost"
+    port: 8000
+    timeout: 30
+    pool_size: 10
+    
+  rust:
+    enabled: true
+    host: "localhost"
+    port: 8001
+    timeout: 15
+    workers: 4
+
+# Enhanced LLM Configuration
+enhanced_llm:
+  # Processing Strategy
+  processing_strategy: "hybrid"  # "nebius_first", "local_first", "hybrid"
+  
+  # Performance Settings
+  concurrent_requests: 10
+  request_timeout: 60
+  retry_attempts: 3
+  
+  # Caching
+  enable_response_cache: true
+  cache_ttl: 1800  # 30 minutes
+  max_cache_size: 1000
+  
+  # Monitoring
+  enable_metrics: true
+  log_level: "INFO"
+  performance_tracking: true
+
+# Prompt Preset Templates
+preset_templates:
+  system_prompt_prefix: |
+    You are an expert AI assistant specialized in {mode} tasks. 
+    You have access to comprehensive knowledge and training in this domain.
+    Always provide accurate, helpful, and detailed responses.
+    
+  user_prompt_template: |
+    {mode_context}
+    
+    User Request: {user_input}
+    
+    Please provide a comprehensive response that includes:
+    1. Direct answer to the request
+    2. Relevant context and background
+    3. Practical recommendations
+    4. Best practices and considerations
+    
+    Context: {context}
+
+# Quality Assurance
+quality_assurance:
+  min_confidence_score: 0.7
+  enable_response_validation: true
+  max_response_length: 4000
+  require_structured_output: false
+  
+# Security Settings
+security:
+  api_key_rotation_days: 90
+  enable_request_logging: true
+  sanitize_logs: true
+  rate_limiting:
+    requests_per_minute: 60
+    burst_limit: 10
+
+# Development Settings
+development:
+  debug_mode: false
+  mock_api_calls: false
+  test_mode: false
+  verbose_logging: false

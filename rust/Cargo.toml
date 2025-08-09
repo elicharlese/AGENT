@@ -4,7 +4,8 @@ members = [
     "agent-security-tools",
     "agent-performance-monitor", 
     "agent-container-orchestrator",
-    "agent-core-utils"
+    "agent-core-utils",
+    "agent-llm-core"
 ]
 
 [workspace.dependencies]
@@ -17,6 +18,10 @@ tracing = "0.1"
 tracing-subscriber = "0.3"
 reqwest = { version = "0.11", features = ["json", "stream"] }
 pyo3 = { version = "0.20", features = ["extension-module"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+warp = "0.3"
+futures = "0.3"
+dashmap = "5.0"
 
 [profile.release]
 opt-level = 3

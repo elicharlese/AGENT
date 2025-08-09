@@ -21,6 +21,13 @@
           }
         }
       }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{workspaceRoot}/dist/apps/web"],
+      "options": {
+        "outputPath": "dist/apps/web"
+      }
     }
   }
 }

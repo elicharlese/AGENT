@@ -12,70 +12,6 @@
       "apps/web/vite.config.ts",
       "@nx/vite/plugin"
     ],
-    "targets.build": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.options": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.cache": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.dependsOn": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.inputs": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.outputs": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.executor": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.options.cwd": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.options.command": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.technologies": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.technologies.0": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.description": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.help": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.help.command": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.help.example": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
     "targets.dev": [
       "apps/web/vite.config.ts",
       "@nx/vite/plugin"
@@ -240,14 +176,6 @@
       "apps/web/vite.config.ts",
       "@nx/vite/plugin"
     ],
-    "targets.build-deps": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build-deps.dependsOn": [
-      "apps/web/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
     "targets.watch-deps": [
       "apps/web/vite.config.ts",
       "@nx/vite/plugin"
@@ -329,6 +257,26 @@
       "nx/core/project-json"
     ],
     "targets.serve.configurations.withApiLocal.env": [
+      "apps/web/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/web/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/web/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/web/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/web/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
       "apps/web/project.json",
       "nx/core/project-json"
     ]
@@ -576,6 +524,300 @@
     ],
     "implicitDependencies.web": [
       "apps/web-e2e/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "apps/mobile": {
+    "root": [
+      "apps/mobile/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.start": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.start.executor": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.start.continuous": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.serve": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.serve.continuous": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.serve.options": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.serve.executor": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.serve.options.cwd": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.serve.options.args": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.serve.options.command": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-ios": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-ios.continuous": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-ios.options": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-ios.executor": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-ios.options.cwd": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-ios.options.command": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-android": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-android.continuous": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-android.options": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-android.executor": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-android.options.cwd": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.run-android.options.command": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.export": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.export.options": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.export.cache": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.export.dependsOn": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.export.inputs": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.export.outputs": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.export.executor": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.export.options.cwd": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.export.options.args": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.export.options.command": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.install": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.install.executor": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.prebuild": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.prebuild.executor": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.build": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.submit": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.submit.options": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.submit.executor": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.submit.options.cwd": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.submit.options.command": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.build-deps": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/mobile/app.json",
+      "@nx/expo/plugin"
+    ],
+    "name": [
+      "apps/mobile/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eas-build-post-install": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eas-build-post-install.executor": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eas-build-post-install.options": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eas-build-post-install.metadata": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eas-build-post-install.options.script": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eas-build-post-install.metadata.scriptContent": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.eas-build-post-install.metadata.runCommand": [
+      "apps/mobile/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "apps/mobile/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/mobile/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/mobile/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "apps/mobile/project.json",
       "nx/core/project-json"
     ]
   }
